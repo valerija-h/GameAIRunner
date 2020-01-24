@@ -13,12 +13,13 @@ public class MainPlayer : MonoBehaviour
     private Rigidbody playerRigidbody;
     private Collider playerCollider;
 
-    public GameManager gameManager;
+    private GameManager gameManager;
 
     void Start()
     {
         playerRigidbody = GetComponent<Rigidbody>();
         playerCollider = GetComponent<Collider>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     void Update()
