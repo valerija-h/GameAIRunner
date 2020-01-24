@@ -1,32 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public int score;
-    public int life;
-    public Text scoreText;
-    public Text lifeText;
+    private MainPlayer player;
+    private Vector3 playerStartPoint;
+
+    private ScoreManager scoreManager;
 
     void Start()
     {
-        scoreText.text = "Score: " + score.ToString();
-        lifeText.text = "Lives: " + life.ToString();
+        player = FindObjectOfType<MainPlayer>();
+        scoreManager = FindObjectOfType<ScoreManager>();
+
+        playerStartPoint = player.transform.position;
     }
 
-    // add to the life
-    public void changeLife(int num)
+    void Update()
     {
-        life += num;
-        lifeText.text = "Lives: " + life.ToString();
+        
     }
 
-    // add to the current score
-    public void changeScore(int num)
-    {
-        score += num;
-        scoreText.text = "Score: " + score.ToString();
+    public void RestartGame() {
+        StartCoroutine("RestartGameCo");
+    }
+
+    public IEnumerator RestartGameCo() {
+        scoreManager.scoreIncreasing = false;
+        player.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        player.transform.position = playerStartPoint;
+        player.gameObject.SetActive(true);
+
+        scoreManager.scoreCount = 0;
+        scoreManager.scoreIncreasing = true;
     }
 }
