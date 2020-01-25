@@ -10,6 +10,10 @@ public class MainPlayer : MonoBehaviour
     public bool isGrounded;
     public int pointValue;  // how many values a point gives
 
+    public float jumpTime;
+    private float jumpTimeCounter;
+    private bool stoppedJumping;
+
     private Rigidbody playerRigidbody;
     private Collider playerCollider;
 
@@ -20,6 +24,8 @@ public class MainPlayer : MonoBehaviour
         playerRigidbody = GetComponent<Rigidbody>();
         playerCollider = GetComponent<Collider>();
         gameManager = FindObjectOfType<GameManager>();
+        jumpTimeCounter = jumpTime;
+        stoppedJumping = true;
     }
 
     void Update()
@@ -32,7 +38,29 @@ public class MainPlayer : MonoBehaviour
             if (isGrounded)
             {
                 playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, jumpForce, playerRigidbody.velocity.z);
+                stoppedJumping = false;
             }
+        }
+
+        // new jump scripts
+        if (Input.GetKey(KeyCode.Space) && !stoppedJumping)
+        {
+            if (jumpTimeCounter > 0)
+            {
+                playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, jumpForce, playerRigidbody.velocity.z);
+                jumpTimeCounter -= Time.deltaTime;
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            jumpTimeCounter = 0;
+            stoppedJumping = true;
+        }
+
+        if (isGrounded)
+        {
+            jumpTimeCounter = jumpTime;
         }
     }
 
@@ -51,7 +79,8 @@ public class MainPlayer : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "KillBox") {
+        if (collision.gameObject.tag == "KillBox")
+        {
             gameManager.RestartGame();
         }
     }
