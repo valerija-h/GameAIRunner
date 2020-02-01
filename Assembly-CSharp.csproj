@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9E0DEA2D-BD54-CD05-E08F-A3F1574552B8}</ProjectGuid>
+    <ProjectGuid>{D498843A-BFBA-9068-7543-B9B1DFC09459}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -66,6 +66,7 @@
     <Compile Include="Assets\MiniGames\Karting\KartAcademy.cs" />
     <Compile Include="Assets\MiniGames\Karting\KartAgent.cs" />
     <Compile Include="Assets\MiniGames\ML-Agents\Examples\Tennis\Scripts\HitWall.cs" />
+    <Compile Include="Assets\MiniGames\ML-Agents\Examples\Tennis\Scripts\HitWallPlayer.cs" />
     <Compile Include="Assets\MiniGames\ML-Agents\Examples\Tennis\Scripts\TennisAcademy.cs" />
     <Compile Include="Assets\MiniGames\ML-Agents\Examples\Tennis\Scripts\TennisAgent.cs" />
     <Compile Include="Assets\MiniGames\ML-Agents\Examples\Tennis\Scripts\TennisArea.cs" />
@@ -205,32 +206,32 @@
     <None Include="Assets\MiniGames\UTech\MG-Karting\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\MiniGames\UTech\MG-Karting\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\MiniGames\UTech\MG-Karting\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <Reference Include="Cinemachine">
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/2018.4.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -434,37 +435,37 @@
       <HintPath>C:/Program Files/Unity/Editor/2018.4.15f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Abstractions">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/System.IO.Abstractions.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Assets/MiniGames/ML-Agents/Plugins/System.IO.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Abstractions.TestingHelpers">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Assets/MiniGames/ML-Agents/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/System.Numerics.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Assets/MiniGames/ML-Agents/Plugins/System.Numerics.dll</HintPath>
     </Reference>
     <Reference Include="System.ValueTuple">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/System.ValueTuple.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Assets/MiniGames/ML-Agents/Plugins/System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="Barracuda">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/Barracuda.Core/Barracuda/Barracuda.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Assets/MiniGames/ML-Agents/Plugins/Barracuda.Core/Barracuda/Barracuda.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Assets/MiniGames/ML-Agents/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.Core">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Assets/MiniGames/ML-Agents/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Interactive.Async">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Assets/MiniGames/ML-Agents/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunner/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/2018.4.15f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -823,15 +824,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="iOSBLAS.csproj">
-      <Project>{73367211-6EA1-A421-1029-4C1337105797}</Project>
+      <Project>{BD52AB89-0DF0-0E93-AA3F-19BB147C01F5}</Project>
       <Name>iOSBLAS</Name>
     </ProjectReference>
     <ProjectReference Include="MacBLAS.csproj">
-      <Project>{85A51A2D-3243-2BB9-DDE3-D0920AA0CEB6}</Project>
+      <Project>{A6355E2C-5EC8-0D33-7A81-BE64C89629E8}</Project>
       <Name>MacBLAS</Name>
     </ProjectReference>
     <ProjectReference Include="Barracuda-editor.csproj">
-      <Project>{A69A0907-B610-D793-0665-5641BF65E8E9}</Project>
+      <Project>{D3615ED9-0366-2A96-CB1F-66A6D0E9FE92}</Project>
       <Name>Barracuda-editor</Name>
     </ProjectReference>
   </ItemGroup>

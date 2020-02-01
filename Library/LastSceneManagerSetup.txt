@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MiniGames/Scenes/TennisIL.unity
+- path: Assets/Scenes/TennisIL.unity
   isLoaded: 1
   isActive: 1

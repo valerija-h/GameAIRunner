@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HitWall : MonoBehaviour
 {
@@ -16,6 +17,21 @@ public class HitWall : MonoBehaviour
         m_AgentA = m_Area.agentA.GetComponent<TennisAgent>();
         m_AgentB = m_Area.agentB.GetComponent<TennisAgent>();
     }
+
+
+
+    //private void Update()
+    //{
+    //   if( m_AgentA.score >= 5)
+    //    {
+    //        SceneManager.LoadScene("lose");
+    //    }
+
+    //    if (m_AgentB.score >= 5)
+    //    {
+    //        SceneManager.LoadScene("win");
+    //    }
+    //}
 
     private void OnTriggerExit(Collider other)
     {
@@ -39,16 +55,20 @@ public class HitWall : MonoBehaviour
         {
             if (collision.gameObject.name == "wallA")
             {
-                if (lastAgentHit == 0)
+                if (lastAgentHit == 1)
                 {
                     m_AgentA.AddReward(-0.01f);
                     m_AgentB.SetReward(0);
+                    m_AgentB.AddReward(+0.005f);
+
                     m_AgentB.score += 1;
                 }
-                else
+                else if (lastAgentHit ==0)
                 {
                     m_AgentA.SetReward(0);
                     m_AgentB.AddReward(-0.01f);
+                    m_AgentA.AddReward(+0.005f);
+
                     m_AgentA.score += 1;
                 }
             }
@@ -58,12 +78,15 @@ public class HitWall : MonoBehaviour
                 {
                     m_AgentA.AddReward(-0.01f);
                     m_AgentB.SetReward(0);
+                    m_AgentB.AddReward(+0.005f);
                     m_AgentB.score += 1;
                 }
-                else
+                else if(lastAgentHit==1)
                 {
                     m_AgentA.SetReward(0);
                     m_AgentB.AddReward(-0.01f);
+                    m_AgentA.AddReward(+0.005f);
+
                     m_AgentA.score += 1;
                 }
             }
@@ -73,12 +96,14 @@ public class HitWall : MonoBehaviour
                 {
                     m_AgentA.AddReward(-0.01f);
                     m_AgentB.SetReward(0);
+                    m_AgentB.AddReward(+0.005f);
                     m_AgentB.score += 1;
                 }
                 else
                 {
                     m_AgentA.AddReward(-0.01f);
                     m_AgentB.SetReward(0);
+                    m_AgentB.AddReward(+0.005f);
                     m_AgentB.score += 1;
                 }
             }
@@ -88,12 +113,14 @@ public class HitWall : MonoBehaviour
                 {
                     m_AgentA.SetReward(0);
                     m_AgentB.AddReward(-0.01f);
+                    m_AgentA.AddReward(+0.005f);
                     m_AgentA.score += 1;
                 }
                 else
                 {
                     m_AgentA.SetReward(0);
                     m_AgentB.AddReward(-0.01f);
+                    m_AgentA.AddReward(+0.005f);
                     m_AgentA.score += 1;
                 }
             }
@@ -103,12 +130,15 @@ public class HitWall : MonoBehaviour
                 {
                     m_AgentA.AddReward(-0.01f);
                     m_AgentB.SetReward(0);
+                    m_AgentB.AddReward(+0.005f);
                     m_AgentB.score += 1;
+
                 }
                 else
                 {
                     m_AgentA.SetReward(0);
                     m_AgentB.AddReward(-0.01f);
+                    m_AgentA.AddReward(+0.005f);
                     m_AgentA.score += 1;
                 }
             }
