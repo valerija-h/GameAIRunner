@@ -173,9 +173,9 @@
     <Compile Include="Assets\Scripts\Parallax.cs" />
     <Compile Include="Assets\Scripts\PickPoints.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
-    <Compile Include="Assets\Scripts\Testing Scripts\Area.cs" />
-    <Compile Include="Assets\Scripts\Testing Scripts\RayPerception.cs" />
-    <Compile Include="Assets\Scripts\Testing Scripts\RayPerception3D.cs" />
+    <Compile Include="Assets\Scripts\Testing Scripts\Include\Area.cs" />
+    <Compile Include="Assets\Scripts\Testing Scripts\Include\RayPerception.cs" />
+    <Compile Include="Assets\Scripts\Testing Scripts\Include\RayPerception3D.cs" />
     <Compile Include="Assets\Scripts\Testing Scripts\RunnerAcademy.cs" />
     <Compile Include="Assets\Scripts\Testing Scripts\RunnerArea.cs" />
     <Compile Include="Assets\Scripts\Testing Scripts\RunnerPlayer.cs" />

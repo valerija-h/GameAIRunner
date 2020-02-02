@@ -14,17 +14,14 @@ public class RunnerArea : Area
 
     public override void ResetArea()
     {
-        // remove all points ?
         RemoveAllPoints();
-        // reset player ?
         PlacePlayer();
-        // spawn all points ?
         SpawnAllPoints();
     }
 
     // remove points
     private void RemoveAllPoints() {
-        Destroy(GameObject.FindGameObjectWithTag("Points"));
+        Destroy(GameObject.Find("Points"));
     }
 
     // spawn points

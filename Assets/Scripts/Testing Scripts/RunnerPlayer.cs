@@ -8,8 +8,15 @@ public class RunnerPlayer : Agent
     private RunnerArea runnerArea;
     private RayPerception rayPerception;
     private GameObject checkpoint;
-    bool reachedCheckpoint;
 
+    private GameObject platforms;
+    private GameObject points;
+
+    private GameObject currentPlatform;
+    private GameObject previousPlatform;
+    private bool justLanded = false;
+
+    bool reachedCheckpoint;
 
     // called when made a decision - jump or not
     public override void AgentAction(float[] vectorAction, string textAction)
@@ -24,7 +31,7 @@ public class RunnerPlayer : Agent
             }
         }
 
-        AddReward(-0.1f / agentParameters.maxStep); // tiny negative reward every step
+        AddReward(-0.01f / agentParameters.maxStep); // tiny negative reward every step - he does anything
     }
 
     public override void AgentReset()
@@ -32,6 +39,7 @@ public class RunnerPlayer : Agent
         // reset any player stats
         reachedCheckpoint = false;
         runnerArea.ResetArea();
+        points = GameObject.Find("Points");
     }
 
     // how it percieves/observes its environment
@@ -39,10 +47,13 @@ public class RunnerPlayer : Agent
     {
         // has the chekpoint been reached
         AddVectorObs(reachedCheckpoint);
+        AddVectorObs(this.transform.position);
+
         // raycasts (sight we only need ray angles 0 i guess, tags is what they can see)
         float rayDistance = 20f;
-        float[] rayAngles = { 20f, 60f, 90f, 120f }; // the angle it sees
+        float[] rayAngles = { 20f, 60f, 90f, 120f, 180f }; // the angle it sees
         string[] detectableObjects = { "KillBox", "Points", "Platform", "Checkpoint" }; // the tags it can see
+
         AddVectorObs(rayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));
     }
 
@@ -53,6 +64,7 @@ public class RunnerPlayer : Agent
         runnerArea = FindObjectOfType<RunnerArea>();
         rayPerception = GetComponent<RayPerception3D>();
         checkpoint = runnerArea.checkpoint;
+        platforms = GameObject.Find("Platforms");
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -60,7 +72,7 @@ public class RunnerPlayer : Agent
         if (collision.transform.CompareTag("Checkpoint"))
         {
             reachedCheckpoint = true;
-            AddReward(1f);
+            AddReward(10f);
         }
         else if (collision.transform.CompareTag("Points")) {
             AddReward(1f);
@@ -68,7 +80,7 @@ public class RunnerPlayer : Agent
         }
         else if (collision.transform.CompareTag("KillBox"))
         {
-            AddReward(-1f);
+            AddReward(-5f);
             this.transform.position = new Vector3(-10f, 2f, 0f);
         }
     }
@@ -94,8 +106,24 @@ public class RunnerPlayer : Agent
 
         if (Physics.Raycast(transform.position, Vector3.down, out hit, raycastDistance, mask))
         {
+            currentPlatform = hit.transform.gameObject;
+           
+           if (!justLanded) {
+                justLanded = true;
+                Debug.Log("Landed");
+                if (currentPlatform == previousPlatform) {
+                    AddReward(-1f);
+                }
+                else {
+                    AddReward(1f);
+                }
+                previousPlatform = currentPlatform;
+            }
+
             return true;
         }
+        currentPlatform = null;
+        justLanded = false;
         return false;
     }
 }
