@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class MainCamera : MonoBehaviour
 {
-    public MainPlayer player;
+    public RunnerPlayer player;
     private Vector3 lastPlayerPosition;
     private float distanceToMove;
 
     void Start()
     {
-        player = FindObjectOfType<MainPlayer>();
+        player = FindObjectOfType<RunnerPlayer>();
         lastPlayerPosition = player.transform.position;
     }
 

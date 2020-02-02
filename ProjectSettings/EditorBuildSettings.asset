@@ -17,16 +17,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/MiniGames/Karting/KartTrainingScene.unity
     guid: 24dae1d2bd06b462f91085d93b92ec95
-  - enabled: 1
+  - enabled: 0
     path: Assets/MiniGames/ML-Agents/Examples/Tennis/Scenes/Tennis.unity
     guid: 25c0c9e81e55c4e129e1a5c0ac254100
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/win.unity
     guid: e8b4923c168d13947928ea12d6296c49
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/lose.unity
     guid: e7ea823d914bb744790edc6dc99af7c5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TennisIL.unity
     guid: fcb7318b9c85c40a3b186ed8a3857f0a
+  - enabled: 1
+    path: Assets/Scenes/MyNextFuckUp.unity
+    guid: 62466ede5124842b7aba33e4aac286cf
   m_configObjects: {}

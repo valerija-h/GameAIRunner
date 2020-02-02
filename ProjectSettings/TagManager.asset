@@ -26,6 +26,9 @@ TagManager:
   - badBanana
   - pit
   - KillBox
+  - Points
+  - Platform
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
