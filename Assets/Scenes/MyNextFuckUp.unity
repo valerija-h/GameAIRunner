@@ -418,7 +418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   broadcastHub:
     broadcastingBrains:
-    - {fileID: 11400000, guid: 5b74a86e516de469491931d01677bc3a, type: 2}
+    - {fileID: 11400000, guid: 932039fa2fdc34784a2c55f4cb31b1ff, type: 2}
     m_BrainsToControl:
     - {fileID: 11400000, guid: 932039fa2fdc34784a2c55f4cb31b1ff, type: 2}
   m_TrainingConfiguration:
@@ -2603,12 +2603,12 @@ PrefabInstance:
         type: 3}
       propertyPath: brain
       value: 
-      objectReference: {fileID: 11400000, guid: 5b74a86e516de469491931d01677bc3a,
+      objectReference: {fileID: 11400000, guid: 932039fa2fdc34784a2c55f4cb31b1ff,
         type: 2}
     - target: {fileID: 5078855490857953616, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}
       propertyPath: agentParameters.maxStep
-      value: 5000
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 5078855490857953616, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}
@@ -2753,6 +2753,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9160113179400805287, guid: f3aa0dc7646509b4eaa9d25b0dad5d87,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -32.69995
+      objectReference: {fileID: 0}
     - target: {fileID: 9160113180456263684, guid: f3aa0dc7646509b4eaa9d25b0dad5d87,
         type: 3}
       propertyPath: m_Name
