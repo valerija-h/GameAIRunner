@@ -1,8 +1,8 @@
 Win64
 PlayerPath?
-D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/TennisBuild/GameAIRunner.exe
+D:/Documents/Uni/Yr3/Game AI/ActualGame/GameAIRunnerWorking/KartBuild/GameAIRunner.exe
 SceneListBegin?
-Assets/MiniGames/ML-Agents/Examples/Tennis/Scenes/Tennis.unity
+Assets/MiniGames/Karting/KartTrainingScene.unity
 SceneListEnd?
 a1f19ad47d3094e235f21b74dfc423a8 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessLayer
 23d669c8bf2983ca4a3df160658318a6 Cinemachine.dll:Cinemachine.CinemachineStateDrivenCamera
@@ -70,6 +70,8 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 f542c1afca5bb4022f91fdda19b8d622 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.DepthOfField
 d3c76b14a25eebd3a3323dd43297919c Unity.TextMeshPro.dll:TMPro.TMP_InputField
 757f167aeb7b7820fd4699557e8b0001 Assembly-CSharp.dll:.ScoreManager
+71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
+71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 89cbcfa77989979e1843b899c81094a8 Assembly-CSharp.dll:.EmitParticlesOnLand
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -105,6 +107,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 6dd3dc11942e98c0a809c81f95fc960c Cinemachine.dll:Cinemachine.CinemachineExternalCamera
 63d7b9b64a11859f416d72ba9a3c3fec Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections
+8e5750ad10b0567929995a0473923807 Assembly-CSharp.dll:.HitWallPlayer
 b5eb08b578a2f2d80bb106cbe65ab501 Cinemachine.dll:Cinemachine.CinemachineStoryboard
 38bcb4d3f9a1812fd650f92e87a4cf64 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessProfile
 cbae2ed2d2d53cc8f539e7cb4f29bc1f Cinemachine.dll:.CinemachineCameraOffset
@@ -170,6 +173,7 @@ bd543bad7f9f6262f10595aadb130d22 Cinemachine.dll:Cinemachine.CinemachineComposer
 15882a52798c275361cd0a3ada984ec5 Cinemachine.dll:Cinemachine.CinemachineDollyCart
 d6fc8d3165070298511ec776ea575626 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessResources
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
+f6d6b947ddfef57bedd5b1c896043c65 Assembly-CSharp.dll:KartGame.Track.PlayerTrackManager
 204ea02909ea3f738dafe3ff633d2a93 Cinemachine.dll:Cinemachine.CinemachineTrackedDolly
 71bb6a6b6c8f052f948db64c7dd3ca4f Cinemachine.dll:Cinemachine.CinemachinePipeline
 a53651ee3996fbba20dfe0fce02f0b23 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.AutoExposure
@@ -201,6 +205,7 @@ a66794b62dbf044668a5f102bb7908c2 Cinemachine.dll:Cinemachine.CinemachineImpulseL
 e6d75f1a9bc0c6f7085df0baa077e688 Cinemachine.dll:Cinemachine.CinemachineGroupComposer
 dbfb4270852b0008a423a7418d9de4cf Cinemachine.dll:Cinemachine.CinemachineSameAsFollowTarget
 4a639215e29265dd99e4fed19e3fa9f4 Cinemachine.dll:Cinemachine.CinemachineBlendListCamera
+7ce0c002eb1692e9b612743ce8f58bcd Assembly-CSharp.dll:KartGame.KartSystems.WallCollider
 b639d97cb780d0d99a2bfb3ad1935732 Cinemachine.dll:Cinemachine.CinemachineMixingCamera
 35a9693c388776aaf487636491a20f11 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
 e591bbaab6a99a496adc9d7bae660e76 Assembly-CSharp.dll:.TennisArea
@@ -253,6 +258,7 @@ fd8bb18bae7f7a668d9d11f2304db729 Assembly-CSharp.dll:KartGame.KartSystems.Addati
 d0987ce3e9092dbe0fa30d73f333fffa Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.Grain
 df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
+969a988d5acb8aeda15793e8e25841f1 Assembly-CSharp.dll:KartGame.Track.PlayerCheckpoint
 ac6acd886c54c48c599ab5fed5781ea7 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.AmbientOcclusion
 71bb6a6b6c8f052f948db64c7dd3ca4f Cinemachine.dll:Cinemachine.CinemachinePixelPerfect
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh

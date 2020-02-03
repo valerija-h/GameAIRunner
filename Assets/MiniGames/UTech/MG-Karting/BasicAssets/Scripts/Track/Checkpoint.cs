@@ -1,14 +1,17 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace KartGame.Track
 {
     /// <summary>
     /// This is used to mark out key points on the track that a racer must pass through in order to count as having completed a lap.
     /// </summary>
-    [RequireComponent (typeof(BoxCollider))]
+    [RequireComponent(typeof(BoxCollider))]
     public class Checkpoint : MonoBehaviour
     {
+        private int colliderCount = 0;
+
         /// <summary>
         /// This is subscribed to by the TrackManager in order to measure a racer's progress around the track.
         /// </summary>
@@ -65,6 +68,13 @@ namespace KartGame.Track
                 if (racer != null)
                     OnKartHitCheckpoint?.Invoke (racer, this);
             }
+
+
+   
+
+
+
+
+            }
         }
     }
-}

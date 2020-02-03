@@ -64,7 +64,7 @@ public class KartAgent : Agent, IInput
         if (_acceleration > 0) _acceleration = 1;
         _steering = vectorAction[1];
 
-        AddReward(kart.LocalSpeed * .001f);
+        AddReward(kart.LocalSpeed * .002f);
     }
 
     public override void CollectObservations() {
@@ -87,10 +87,14 @@ public class KartAgent : Agent, IInput
         var obs = distance / raycastDistance;
         AddVectorObs(obs);
 
-        //if (distance < 1f) {
-        //    this.Done();
-        //    this.AgentReset();
-        //}
+
+//remove for player
+        if (distance < 0.1f)
+        {
+            this.Done();
+            this.AgentReset();
+            AddReward(-0.001f);
+        }
         Debug.DrawRay(ray.position, ray.forward * distance, Color.Lerp(Color.red, Color.green, obs), Time.deltaTime * debugRaycastTime);
     }
 

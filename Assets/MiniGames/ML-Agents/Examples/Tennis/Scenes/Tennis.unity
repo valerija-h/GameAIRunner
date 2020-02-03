@@ -1056,13 +1056,14 @@ MonoBehaviour:
   broadcastHub:
     broadcastingBrains:
     - {fileID: 11400000, guid: 1674996276be448c2ad51fb139e21e05, type: 2}
-    - {fileID: 11400000, guid: 316cf4d46eae6c943acdbd9e371670f7, type: 2}
+    - {fileID: 11400000, guid: 758fdbc262b14f14f87d99c0ddaf5664, type: 2}
     m_BrainsToControl:
     - {fileID: 0}
-    - {fileID: 11400000, guid: 28b205feee5e66c4f8de5462f9ca75e7, type: 2}
+    - {fileID: 0}
     - {fileID: 11400000, guid: 1674996276be448c2ad51fb139e21e05, type: 2}
-    - {fileID: 11400000, guid: 758fdbc262b14f14f87d99c0ddaf5664, type: 2}
+    - {fileID: 0}
     - {fileID: 11400000, guid: 316cf4d46eae6c943acdbd9e371670f7, type: 2}
+    - {fileID: 11400000, guid: 758fdbc262b14f14f87d99c0ddaf5664, type: 2}
   m_TrainingConfiguration:
     width: 300
     height: 200

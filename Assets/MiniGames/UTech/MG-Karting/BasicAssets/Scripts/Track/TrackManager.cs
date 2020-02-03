@@ -5,6 +5,7 @@ using KartGame.KartSystems;
 using UnityEngine;
 using UnityEngine.Events;
 
+using UnityEngine.SceneManagement;
 namespace KartGame.Track
 {
     /// <summary>
@@ -15,7 +16,7 @@ namespace KartGame.Track
         [Tooltip ("The name of the track in this scene.  Used for track time records.  Must be unique.")]
         public string trackName;
         [Tooltip ("Number of laps for the race.")]
-        public int raceLapTotal;
+        public int raceLapTotal = 1;
         [Tooltip ("All the checkpoints for the track in the order that they should be completed starting with the start/finish line checkpoint.")]
         public List<Checkpoint> checkpoints = new List<Checkpoint> ();
         [Tooltip("Reference to an object responsible for repositioning karts.")]
@@ -224,6 +225,7 @@ namespace KartGame.Track
         {
             m_IsRaceRunning = false;
 
+
             foreach (KeyValuePair<IRacer, Checkpoint> racerNextCheckpoint in m_RacerNextCheckpoints)
             {
                 racerNextCheckpoint.Key.DisableControl ();
@@ -267,37 +269,39 @@ namespace KartGame.Track
         {
             this.reachedCorrectCheckpoint.Invoke(checkpoint);
             if (checkpoint.isStartFinishLine)
+
+
             {
-                int racerCurrentLap = racer.GetCurrentLap ();
+                int racerCurrentLap = racer.GetCurrentLap();
                 if (racerCurrentLap > 0)
                 {
-                    float lapTime = racer.GetLapTime ();
+                    float lapTime = racer.GetLapTime();
 
                     if (m_SessionBestLap.time > lapTime)
-                        m_SessionBestLap.SetRecord (trackName, 1, racer, lapTime);
+                        m_SessionBestLap.SetRecord(trackName, 1, racer, lapTime);
 
                     if (m_HistoricalBestLap.time > lapTime)
-                        m_HistoricalBestLap.SetRecord (trackName, 1, racer, lapTime);
+                        m_HistoricalBestLap.SetRecord(trackName, 1, racer, lapTime);
 
                     if (racerCurrentLap == raceLapTotal)
                     {
-                        float raceTime = racer.GetRaceTime ();
+                        float raceTime = racer.GetRaceTime();
 
                         if (m_SessionBestRace.time > raceTime)
-                            m_SessionBestRace.SetRecord (trackName, raceLapTotal, racer, raceTime);
+                            m_SessionBestRace.SetRecord(trackName, raceLapTotal, racer, raceTime);
 
                         if (m_HistoricalBestRace.time > raceTime)
-                            m_HistoricalBestLap.SetRecord (trackName, raceLapTotal, racer, raceTime);
+                            m_HistoricalBestLap.SetRecord(trackName, raceLapTotal, racer, raceTime);
 
-                        racer.DisableControl ();
-                        racer.PauseTimer ();
+                        racer.DisableControl();
+                        racer.PauseTimer();
                     }
                 }
 
-                if (CanEndRace ())
-                    StopRace ();
+                if (CanEndRace())
+                    StopRace();
 
-                racer.HitStartFinishLine ();
+                racer.HitStartFinishLine();
             }
         }
 

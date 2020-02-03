@@ -146,10 +146,13 @@
     <Compile Include="Assets\MiniGames\UTech\MG-Karting\BasicAssets\Scripts\KartSystems\KartMovement\KartStats.cs" />
     <Compile Include="Assets\MiniGames\UTech\MG-Karting\BasicAssets\Scripts\Timeline\DirectorTrigger.cs" />
     <Compile Include="Assets\MiniGames\UTech\MG-Karting\BasicAssets\Scripts\Track\Checkpoint.cs" />
+    <Compile Include="Assets\MiniGames\UTech\MG-Karting\BasicAssets\Scripts\Track\EndRace.cs" />
     <Compile Include="Assets\MiniGames\UTech\MG-Karting\BasicAssets\Scripts\Track\InstantKartRepositioner.cs" />
     <Compile Include="Assets\MiniGames\UTech\MG-Karting\BasicAssets\Scripts\Track\IRacer.cs" />
     <Compile Include="Assets\MiniGames\UTech\MG-Karting\BasicAssets\Scripts\Track\KartRepositioner.cs" />
     <Compile Include="Assets\MiniGames\UTech\MG-Karting\BasicAssets\Scripts\Track\KartRepositionTrigger.cs" />
+    <Compile Include="Assets\MiniGames\UTech\MG-Karting\BasicAssets\Scripts\Track\PlayerCheckpoint.cs" />
+    <Compile Include="Assets\MiniGames\UTech\MG-Karting\BasicAssets\Scripts\Track\PlayerTrackManager.cs" />
     <Compile Include="Assets\MiniGames\UTech\MG-Karting\BasicAssets\Scripts\Track\Racer.cs" />
     <Compile Include="Assets\MiniGames\UTech\MG-Karting\BasicAssets\Scripts\Track\TimeDisplay.cs" />
     <Compile Include="Assets\MiniGames\UTech\MG-Karting\BasicAssets\Scripts\Track\TrackManager.cs" />
