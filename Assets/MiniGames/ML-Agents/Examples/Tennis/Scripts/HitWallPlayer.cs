@@ -10,9 +10,14 @@ public class HitWallPlayer : MonoBehaviour
     private TennisAgent m_AgentA;
     private TennisAgent m_AgentB;
 
+    public GameObject levelComplete;
+    public GameObject levelFailed;
+
     // Use this for initialization
     void Start()
     {
+        levelFailed.gameObject.SetActive(false);
+        levelComplete.gameObject.SetActive(false);
         m_Area = areaObject.GetComponent<TennisArea>();
         m_AgentA = m_Area.agentA.GetComponent<TennisAgent>();
         m_AgentB = m_Area.agentB.GetComponent<TennisAgent>();
@@ -24,12 +29,12 @@ public class HitWallPlayer : MonoBehaviour
     {
        if( m_AgentA.score >= 5)
         {
-            SceneManager.LoadScene("lose");
+            levelFailed.gameObject.SetActive(true);
         }
 
         if (m_AgentB.score >= 5)
         {
-            SceneManager.LoadScene("win");
+            levelComplete.gameObject.SetActive(true);
         }
     }
 

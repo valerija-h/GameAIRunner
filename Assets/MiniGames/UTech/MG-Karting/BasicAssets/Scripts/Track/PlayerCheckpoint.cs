@@ -11,6 +11,8 @@ namespace KartGame.Track
     public class PlayerCheckpoint : MonoBehaviour
     {
         private int colliderCount = 0;
+        public GameObject levelComplete;
+        public GameObject levelFailed;
 
         /// <summary>
         /// This is subscribed to by the TrackManager in order to measure a racer's progress around the track.
@@ -73,6 +75,7 @@ namespace KartGame.Track
             if (isStartFinishLine == true)
             {
                 IRacer racer = other.GetComponent<IRacer>();
+                Debug.Log(other.name);
 
 
                 colliderCount++;
@@ -81,14 +84,14 @@ namespace KartGame.Track
 
                     if (other.name == "Agent")
                     {
-
-                        SceneManager.LoadScene("lose");
+                        Debug.Log(other.name);
+                        levelFailed.gameObject.SetActive(true);
 
                     }
 
                     else
                     {
-                        SceneManager.LoadScene("win");
+                        levelComplete.gameObject.SetActive(true);
                     }
 
                 }

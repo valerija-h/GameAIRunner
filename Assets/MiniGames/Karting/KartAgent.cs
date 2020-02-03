@@ -87,11 +87,11 @@ public class KartAgent : Agent, IInput
         var obs = distance / raycastDistance;
         AddVectorObs(obs);
 
-        if (distance < 1f)
-        {
-            this.Done();
-            this.AgentReset();
-        }
+        //if (distance < 1f)
+        //{
+        //    this.Done();
+        //    this.AgentReset();
+        //}
         Debug.DrawRay(ray.position, ray.forward * distance, Color.Lerp(Color.red, Color.green, obs), Time.deltaTime * debugRaycastTime);
     }
 
