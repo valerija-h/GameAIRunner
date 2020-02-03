@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/TennisIL.unity
+- path: Assets/Scenes/Minigames/Player/KartPlayer.unity
   isLoaded: 1
   isActive: 1

@@ -19,10 +19,19 @@ public class ManageScene : MonoBehaviour
     {
         SceneManager.LoadScene(nextScene);
     }
-    
+
+    public void goToLevel1()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void removeFade()
+    {
+        this.gameObject.SetActive(false);
+    }
     public void goToTutorial()
     {
         SceneManager.LoadScene(2);
     }
-    
+
 }
