@@ -1,28 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MLAgents;
+
 
 public class PickPoints : MonoBehaviour
 {
-    public int scoreToGive;
-    private ScoreManager scoreManager;
-
-    void Start()
-    {
-        scoreManager = FindObjectOfType<ScoreManager>();
-    }
-
-
-    void Update()
-    {
-        
-    }
+    public RunnerPlayer runnerPlayer;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "Player") {
-            scoreManager.addScore(scoreToGive);
-            gameObject.SetActive(false); // disable coin object
+            runnerPlayer.hitPoints(gameObject);
         }
     }
 }

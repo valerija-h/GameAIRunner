@@ -20,18 +20,30 @@ public class ManageScene : MonoBehaviour
         SceneManager.LoadScene(nextScene);
     }
 
-    public void goToLevel1()
+
+    // load level 1 without agent
+    public void levelOne()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(1);
+        SceneStats.agentOption = false;
+    }
+
+    // load level 1 with agent
+    public void levelOneAgent()
+    {
+        SceneManager.LoadScene(2);
+        SceneStats.agentOption = true;
     }
 
     public void removeFade()
     {
         this.gameObject.SetActive(false);
     }
+
+    // Remove tutorial scene for now
     public void goToTutorial()
     {
-        SceneManager.LoadScene(2);
+        //SceneManager.LoadScene(2);
     }
 
 }

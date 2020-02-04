@@ -174,13 +174,14 @@
     <Compile Include="Assets\Scripts\ManageScene.cs" />
     <Compile Include="Assets\Scripts\Parallax.cs" />
     <Compile Include="Assets\Scripts\PickPoints.cs" />
+    <Compile Include="Assets\Scripts\Runner ML-Agents\Include\Area.cs" />
+    <Compile Include="Assets\Scripts\Runner ML-Agents\Include\RayPerception.cs" />
+    <Compile Include="Assets\Scripts\Runner ML-Agents\Include\RayPerception3D.cs" />
+    <Compile Include="Assets\Scripts\Runner ML-Agents\RunnerAcademy.cs" />
+    <Compile Include="Assets\Scripts\Runner ML-Agents\RunnerArea.cs" />
+    <Compile Include="Assets\Scripts\Runner ML-Agents\RunnerPlayer.cs" />
+    <Compile Include="Assets\Scripts\SceneStats.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
-    <Compile Include="Assets\Scripts\Testing Scripts\Include\Area.cs" />
-    <Compile Include="Assets\Scripts\Testing Scripts\Include\RayPerception.cs" />
-    <Compile Include="Assets\Scripts\Testing Scripts\Include\RayPerception3D.cs" />
-    <Compile Include="Assets\Scripts\Testing Scripts\RunnerAcademy.cs" />
-    <Compile Include="Assets\Scripts\Testing Scripts\RunnerArea.cs" />
-    <Compile Include="Assets\Scripts\Testing Scripts\RunnerPlayer.cs" />
     <None Include="Assets\MiniGames\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\Experimental.compute" />
     <None Include="Assets\MiniGames\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\Conv.compute" />
     <None Include="Assets\MiniGames\UTech\MG-Karting\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -212,31 +213,31 @@
     <None Include="Assets\MiniGames\UTech\MG-Karting\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\MiniGames\UTech\MG-Karting\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Cinemachine">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -440,37 +441,37 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.15f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Abstractions">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/System.IO.Abstractions.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/System.IO.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Abstractions.TestingHelpers">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/System.Numerics.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/System.Numerics.dll</HintPath>
     </Reference>
     <Reference Include="System.ValueTuple">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/System.ValueTuple.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="Barracuda">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/Barracuda.Core/Barracuda/Barracuda.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/Barracuda.Core/Barracuda/Barracuda.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.Core">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Interactive.Async">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Assets/MiniGames/ML-Agents/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/Owner/Documents/University/3rd year/Game AI/Assignment/GameAIRunnerLatest/GameAIRunner/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/VH/Desktop/New folder/GameAIRunner/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.15f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

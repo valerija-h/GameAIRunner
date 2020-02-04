@@ -29,6 +29,8 @@ TagManager:
   - Points
   - Platform
   - Checkpoint
+  - Obstacles
+  - All Points
   layers:
   - Default
   - TransparentFX
