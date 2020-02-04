@@ -9651,7 +9651,7 @@ PrefabInstance:
     - target: {fileID: 377571830991953210, guid: 2cafced46f6c2c04f84565afae820fe5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.24880981
+      value: 0.2487793
       objectReference: {fileID: 0}
     - target: {fileID: 377571830991953210, guid: 2cafced46f6c2c04f84565afae820fe5,
         type: 3}
@@ -13060,7 +13060,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175779212}
-  m_LocalRotation: {x: 0.09853764, y: 0.0000000303109, z: -0.000000504274, w: 0.99513334}
+  m_LocalRotation: {x: 0.09853762, y: 0.000000062411736, z: -0.0000005074526, w: 0.99513334}
   m_LocalPosition: {x: 18.01, y: 101.25, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -14656,7 +14656,7 @@ PrefabInstance:
     - target: {fileID: 196191400487811747, guid: cd11a307960f01248b196e55f33fd146,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.2498169
+      value: 0.24987793
       objectReference: {fileID: 0}
     - target: {fileID: 196191400487811747, guid: cd11a307960f01248b196e55f33fd146,
         type: 3}
@@ -14742,6 +14742,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Game Completed!
+      objectReference: {fileID: 0}
+    - target: {fileID: 196191401412545199, guid: cd11a307960f01248b196e55f33fd146,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 56.55005
       objectReference: {fileID: 0}
     - target: {fileID: 196191401873254292, guid: cd11a307960f01248b196e55f33fd146,
         type: 3}
@@ -16578,33 +16583,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b465c33664cb50e4e8c1ba2c937b27f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1388116308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388116304}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db53bddd13a47be4a9aa2b97e7031a58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  brain: {fileID: 11400000, guid: f7b91215515968b44af687db0b3cd390, type: 2}
-  agentParameters:
-    agentCameras: []
-    agentRenderTextures: []
-    maxStep: 2000
-    resetOnDone: 1
-    onDemandDecision: 0
-    numberOfActionsBetweenDecisions: 10
-  raycastLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  debugRaycastTime: 2
-  raycastDistance: 10
-  raycasts: []
-  rewardOnCheckpoint: 1
 --- !u!1001 &1396237454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20845,29 +20823,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1765085154
 GameObject:
   m_ObjectHideFlags: 0
@@ -22006,12 +21972,12 @@ PrefabInstance:
     - target: {fileID: 6839813283128742103, guid: 3ecf3ff0507237148a4212fda41ff4e4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.7
+      value: -0.7000122
       objectReference: {fileID: 0}
     - target: {fileID: 6839813283128742103, guid: 3ecf3ff0507237148a4212fda41ff4e4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -11.3
+      value: -11.299927
       objectReference: {fileID: 0}
     - target: {fileID: 6839813283128742103, guid: 3ecf3ff0507237148a4212fda41ff4e4,
         type: 3}
@@ -23564,7 +23530,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110853102}
-  m_LocalRotation: {x: 0.09853764, y: 0.0000000303109, z: -0.000000504274, w: 0.99513334}
+  m_LocalRotation: {x: 0.09853762, y: 0.000000062411736, z: -0.0000005074526, w: 0.99513334}
   m_LocalPosition: {x: 18.01, y: 101.25, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []

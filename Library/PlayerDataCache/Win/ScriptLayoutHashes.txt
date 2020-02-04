@@ -1,8 +1,8 @@
 Win
 PlayerPath?
-C:/Users/VH/Desktop/Training Scenes/GameAIRunner.exe
+C:/Users/VH/Downloads/ml-agents-0.10.1/buildlevel1/GameAIRunner.exe
 SceneListBegin?
-Assets/Scenes/RunnerScenes/Level 1 Training.unity
+Assets/Scenes/RunnerScenes/Training/Level 1 Training.unity
 SceneListEnd?
 a1f19ad47d3094e235f21b74dfc423a8 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessLayer
 23d669c8bf2983ca4a3df160658318a6 Cinemachine.dll:Cinemachine.CinemachineStateDrivenCamera
@@ -123,7 +123,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-6a466c2d01b90a982ca606b744477e44 Assembly-CSharp.dll:.RunnerPlayer
+950e20306c99eacd51177fb29b8a751e Assembly-CSharp.dll:.RunnerPlayer
 4e9333594897a1fb8b136ad2eae996c7 Unity.TextMeshPro.dll:TMPro.TMP_SubMeshUI
 07253a77687bdee85ab165b84cc3a809 Assembly-CSharp.dll:KartGame.Timeline.DirectorTrigger
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator

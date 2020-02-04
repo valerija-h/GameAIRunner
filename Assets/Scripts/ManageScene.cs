@@ -9,6 +9,8 @@ public class ManageScene : MonoBehaviour
     int currentScene;
     int nextScene;
 
+    public GameObject difficulty;
+
     void Start()
     {
         currentScene = SceneManager.GetActiveScene().buildIndex;
@@ -20,12 +22,25 @@ public class ManageScene : MonoBehaviour
         SceneManager.LoadScene(nextScene);
     }
 
+    // open difficulty menu
+    public void openDifficulty() {
+        difficulty.SetActive(true);
+    }
 
-    // load level 1 without agent
-    public void levelOne()
+    // load level 1 without agent hard
+    public void levelOneHard()
     {
         SceneManager.LoadScene(1);
         SceneStats.agentOption = false;
+        SceneStats.difficulty = "hard";
+    }
+
+    // load level 1 without agent easy
+    public void levelOneEasy()
+    {
+        SceneManager.LoadScene(1);
+        SceneStats.agentOption = false;
+        SceneStats.difficulty = "easy";
     }
 
     // load level 1 with agent

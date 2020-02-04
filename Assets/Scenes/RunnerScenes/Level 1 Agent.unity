@@ -652,9 +652,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   broadcastHub:
     broadcastingBrains:
-    - {fileID: 11400000, guid: 5b74a86e516de469491931d01677bc3a, type: 2}
-    m_BrainsToControl:
     - {fileID: 11400000, guid: 932039fa2fdc34784a2c55f4cb31b1ff, type: 2}
+    m_BrainsToControl: []
   m_TrainingConfiguration:
     width: 80
     height: 80
@@ -4004,7 +4003,7 @@ PrefabInstance:
         type: 3}
       propertyPath: brain
       value: 
-      objectReference: {fileID: 11400000, guid: 5b74a86e516de469491931d01677bc3a,
+      objectReference: {fileID: 11400000, guid: 932039fa2fdc34784a2c55f4cb31b1ff,
         type: 2}
     - target: {fileID: 5078855490857953616, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}
