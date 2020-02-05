@@ -85,13 +85,24 @@ namespace KartGame.Track
                     if (other.name == "Agent")
                     {
                         Debug.Log(other.name);
-                        levelFailed.gameObject.SetActive(true);
-
+                        if (SceneStats.agentOption == true)
+                        {
+                            SceneManager.LoadScene(7);
+                        }
+                        else {
+                            levelFailed.gameObject.SetActive(true);
+                        }
                     }
 
                     else
                     {
-                        levelComplete.gameObject.SetActive(true);
+                        if (SceneStats.agentOption == true)
+                        {
+                            SceneManager.LoadScene(2);
+                        }
+                        else {
+                            levelComplete.gameObject.SetActive(true);
+                        }
                     }
 
                 }

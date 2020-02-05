@@ -3993,7 +3993,7 @@ PrefabInstance:
     - target: {fileID: 5078855490857953616, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}
       propertyPath: moveSpeed
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5078855490857953616, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}
@@ -4009,7 +4009,7 @@ PrefabInstance:
     - target: {fileID: 5078855490857953616, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}
       propertyPath: agentParameters.maxStep
-      value: 5000
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5078855490857953616, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}
@@ -4028,6 +4028,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 932039fa2fdc34784a2c55f4cb31b1ff,
         type: 2}
+    - target: {fileID: 5078855490857953616, guid: 1b197903b114d41929e3723d69516a05,
+        type: 3}
+      propertyPath: academy
+      value: 
+      objectReference: {fileID: 438986279}
     - target: {fileID: 7215837586175050394, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}
       propertyPath: m_LocalPosition.x

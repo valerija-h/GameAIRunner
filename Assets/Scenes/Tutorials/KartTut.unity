@@ -301,8 +301,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 244, y: -209}
-  m_SizeDelta: {x: 103.7, y: 30}
+  m_AnchoredPosition: {x: 275.55, y: -221}
+  m_SizeDelta: {x: 114.5, y: 31.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &88302913
 MonoBehaviour:
@@ -901,7 +901,7 @@ PrefabInstance:
     - target: {fileID: 6839813283128742103, guid: 3ecf3ff0507237148a4212fda41ff4e4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -27.488007
+      value: -27.488037
       objectReference: {fileID: 0}
     - target: {fileID: 6839813283128742103, guid: 3ecf3ff0507237148a4212fda41ff4e4,
         type: 3}
@@ -947,6 +947,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fade
+      objectReference: {fileID: 0}
+    - target: {fileID: 7870860982433605546, guid: 3ecf3ff0507237148a4212fda41ff4e4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ecf3ff0507237148a4212fda41ff4e4, type: 3}
@@ -1435,8 +1440,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.25, y: -111}
-  m_SizeDelta: {x: 296, y: 267.5}
+  m_AnchoredPosition: {x: 16, y: -112.05}
+  m_SizeDelta: {x: 299.5, y: 265.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1630219365
 MonoBehaviour:
@@ -1582,6 +1587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a5e7246abb6f3a49ad25404a5af8ecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  difficulty: {fileID: 0}
 --- !u!114 &1746406398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1701,8 +1707,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 52.95, y: -197}
-  m_SizeDelta: {x: 694.1, y: 162.1}
+  m_AnchoredPosition: {x: 52.95, y: -172.7}
+  m_SizeDelta: {x: 694.1, y: 113.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1790921685
 MonoBehaviour:
@@ -1726,7 +1732,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: b0742a3a6abf08a409dce1a6b81fbfe5, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 50
     m_Alignment: 0

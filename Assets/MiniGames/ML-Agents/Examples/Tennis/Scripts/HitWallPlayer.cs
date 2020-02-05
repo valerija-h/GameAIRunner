@@ -29,12 +29,24 @@ public class HitWallPlayer : MonoBehaviour
     {
        if( m_AgentA.score >= 5)
         {
-            levelFailed.gameObject.SetActive(true);
+            if (SceneStats.agentOption == true)
+            {
+                SceneManager.LoadScene(2);
+            }
+            else {
+                levelFailed.gameObject.SetActive(true);
+            }
         }
 
         if (m_AgentB.score >= 5)
         {
-            levelComplete.gameObject.SetActive(true);
+            if (SceneStats.agentOption == true)
+            {
+                SceneManager.LoadScene(7);
+            }
+            else {
+                levelComplete.gameObject.SetActive(true);
+            }
         }
     }
 

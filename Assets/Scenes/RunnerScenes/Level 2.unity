@@ -2610,7 +2610,7 @@ PrefabInstance:
     - target: {fileID: 7362988765156934596, guid: 60f2763ca6297e74690f9ba12df45d97,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.307896
+      value: -13.49
       objectReference: {fileID: 0}
     - target: {fileID: 7362988765156934596, guid: 60f2763ca6297e74690f9ba12df45d97,
         type: 3}
@@ -6708,7 +6708,7 @@ PrefabInstance:
     - target: {fileID: 5078855490857953616, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 5078855490857953616, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}
@@ -6724,7 +6724,7 @@ PrefabInstance:
     - target: {fileID: 5078855490857953616, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}
       propertyPath: agentParameters.maxStep
-      value: 5000
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5078855490857953616, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}

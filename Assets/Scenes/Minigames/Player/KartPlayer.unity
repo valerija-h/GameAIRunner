@@ -9693,6 +9693,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 377571831077942255, guid: 2cafced46f6c2c04f84565afae820fe5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1918109626}
+    - target: {fileID: 377571831077942255, guid: 2cafced46f6c2c04f84565afae820fe5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: loadLevelTwo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cafced46f6c2c04f84565afae820fe5, type: 3}
 --- !u!4 &862090340 stripped
@@ -13060,7 +13070,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175779212}
-  m_LocalRotation: {x: 0.09853762, y: 0.000000062411736, z: -0.0000005074526, w: 0.99513334}
+  m_LocalRotation: {x: 0.09853764, y: 0.0000000303109, z: -0.000000504274, w: 0.99513334}
   m_LocalPosition: {x: 18.01, y: 101.25, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -14742,6 +14752,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Game Completed!
+      objectReference: {fileID: 0}
+    - target: {fileID: 196191401412545196, guid: cd11a307960f01248b196e55f33fd146,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1918109626}
+    - target: {fileID: 196191401412545196, guid: cd11a307960f01248b196e55f33fd146,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: loadMainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 196191401412545199, guid: cd11a307960f01248b196e55f33fd146,
         type: 3}
@@ -21818,6 +21838,7 @@ GameObject:
   - component: {fileID: 1918109624}
   - component: {fileID: 1918109623}
   - component: {fileID: 1918109622}
+  - component: {fileID: 1918109626}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -21907,6 +21928,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1918109626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918109621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5e7246abb6f3a49ad25404a5af8ecf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficulty: {fileID: 0}
 --- !u!1001 &1919811430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23530,7 +23564,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110853102}
-  m_LocalRotation: {x: 0.09853762, y: 0.000000062411736, z: -0.0000005074526, w: 0.99513334}
+  m_LocalRotation: {x: 0.09853764, y: 0.0000000303109, z: -0.000000504274, w: 0.99513334}
   m_LocalPosition: {x: 18.01, y: 101.25, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []

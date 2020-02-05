@@ -74,7 +74,6 @@ public class RunnerPlayer : Agent
         runnerArea = FindObjectOfType<RunnerArea>();
         rayPerception = GetComponent<RayPerception3D>();
         playerStartPos = this.transform.position;
-        Debug.Log(SceneStats.agentOption);
     }
 
     public void hitPoints(GameObject point) {
@@ -89,7 +88,29 @@ public class RunnerPlayer : Agent
         {
             reachedCheckpoint = true;
             AddReward(1f);
-            Done();
+            int currentScene = SceneManager.GetActiveScene().buildIndex;
+            if (currentScene == 1 || currentScene == 2) // for level one
+            {  
+                if (SceneStats.agentOption == true)
+                {
+                    SceneManager.LoadScene(5); // load the tennis agent
+                }
+                else
+                {
+                    SceneManager.LoadScene(3); // load the tennis tutorial
+                }
+            }
+            else {  // for level two
+                if (SceneStats.agentOption == true)
+                {
+                    SceneManager.LoadScene(10); // load the kart agent
+                }
+                else
+                {
+                    SceneManager.LoadScene(8); // load the kart tutorial
+                }
+            }
+            Done(); // old agent
         }
         else if (currentTag == "Obstacles")
         {
