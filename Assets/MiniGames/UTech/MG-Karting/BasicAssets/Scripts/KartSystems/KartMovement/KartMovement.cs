@@ -124,7 +124,7 @@ namespace KartGame.KartSystems
 
 
 
-           
+            Time.timeScale = 1f;
 
             m_Input = input as IInput;
             m_Rigidbody = GetComponent<Rigidbody> ();

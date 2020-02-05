@@ -9,7 +9,7 @@ public class MainCamera : MonoBehaviour
     private float distanceToMove;
 
     void Start()
-    {
+    {        
         player = FindObjectOfType<RunnerPlayer>();
         lastPlayerPosition = player.transform.position;
     }

@@ -182,6 +182,8 @@
     <Compile Include="Assets\Scripts\Runner ML-Agents\RunnerPlayer.cs" />
     <Compile Include="Assets\Scripts\SceneStats.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\Sound.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
     <None Include="Assets\MiniGames\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\Experimental.compute" />
     <None Include="Assets\MiniGames\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\Conv.compute" />
     <None Include="Assets\MiniGames\UTech\MG-Karting\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />

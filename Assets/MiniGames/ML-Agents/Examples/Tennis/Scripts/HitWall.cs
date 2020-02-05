@@ -140,6 +140,7 @@ public class HitWall : MonoBehaviour
                     m_AgentB.AddReward(-0.01f);
                     m_AgentA.AddReward(+0.005f);
                     m_AgentA.score += 1;
+                    
                 }
             }
             m_AgentA.Done();

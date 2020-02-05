@@ -27,7 +27,7 @@ public class RunnerPlayer : Agent
 
     bool reachedCheckpoint;
 
-
+   
     // called when made a decision - jump or not
     public override void AgentAction(float[] vectorAction, string textAction)
     {
@@ -38,6 +38,9 @@ public class RunnerPlayer : Agent
             if (isGrounded)
             {
                 playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, jumpForce, playerRigidbody.velocity.z);
+             
+                FindObjectOfType<SoundManager>().Play("jump");
+                
             }
         }
 
@@ -77,6 +80,7 @@ public class RunnerPlayer : Agent
     }
 
     public void hitPoints(GameObject point) {
+        FindObjectOfType<SoundManager>().Play("point");
         AddReward(0.3f);
         point.SetActive(false); // disable coin object
     }
@@ -86,6 +90,7 @@ public class RunnerPlayer : Agent
         string currentTag = collision.gameObject.transform.tag;
         if (currentTag == "Checkpoint")
         {
+            FindObjectOfType<SoundManager>().Play("checkpoint");
             reachedCheckpoint = true;
             AddReward(1f);
             int currentScene = SceneManager.GetActiveScene().buildIndex;
@@ -114,10 +119,12 @@ public class RunnerPlayer : Agent
         }
         else if (currentTag == "Obstacles")
         {
+            FindObjectOfType<SoundManager>().Play("obstacle");
             AddReward(-0.7f);
             AgentReset();
         }
         else if (currentTag == "KillBox") {
+            FindObjectOfType<SoundManager>().Play("fail");
             AddReward(-0.7f);
             AgentReset();
         }

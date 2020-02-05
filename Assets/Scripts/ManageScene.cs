@@ -19,23 +19,30 @@ public class ManageScene : MonoBehaviour
 
     public void changeScene()
     {
+        FindObjectOfType<SoundManager>().Play("button");
+
         SceneManager.LoadScene(nextScene);
     }
 
     // open difficulty menu
     public void openDifficulty() {
+   
+       FindObjectOfType<SoundManager>().Play("button");
+        
         difficulty.SetActive(true);
     }
 
     // close difficulty menu
     public void closeDifficulty()
     {
+        FindObjectOfType<SoundManager>().Play("button");
         difficulty.SetActive(false);
     }
 
     // load level 1 without agent hard
     public void levelOneHard()
     {
+        FindObjectOfType<SoundManager>().Play("button");
         SceneManager.LoadScene(1);
         SceneStats.agentOption = false;
         SceneStats.difficulty = "hard";
@@ -65,6 +72,7 @@ public class ManageScene : MonoBehaviour
     }
 
     public void loadMainMenu() {
+
         SceneManager.LoadScene(0);
     }
 
@@ -91,7 +99,14 @@ public class ManageScene : MonoBehaviour
     // Remove tutorial scene for now
     public void goToTutorial()
     {
+        FindObjectOfType<SoundManager>().Play("button");
+        SceneManager.LoadScene(11);
         //SceneManager.LoadScene(2);
+    }
+
+    public void quit()
+    {
+        Application.Quit();
     }
 
 }
