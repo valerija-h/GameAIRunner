@@ -13070,7 +13070,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175779212}
-  m_LocalRotation: {x: 0.09853764, y: 0.0000000303109, z: -0.000000504274, w: 0.99513334}
+  m_LocalRotation: {x: 0.09853762, y: 0.000000050127262, z: -0.00000050623623, w: 0.99513334}
   m_LocalPosition: {x: 18.01, y: 101.25, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -13657,7 +13657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   broadcastHub:
     broadcastingBrains:
-    - {fileID: 11400000, guid: fea07e34a10f2411994aa163f04fefd9, type: 2}
+    - {fileID: 11400000, guid: 36af172aab9e68e4ebe497c99d2dec95, type: 2}
     m_BrainsToControl: []
   m_TrainingConfiguration:
     width: 80
@@ -20806,7 +20806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f788633d9e7a4ebf8e4a5cc1bfc95bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brain: {fileID: 11400000, guid: fea07e34a10f2411994aa163f04fefd9, type: 2}
+  brain: {fileID: 11400000, guid: 36af172aab9e68e4ebe497c99d2dec95, type: 2}
   agentParameters:
     agentCameras: []
     agentRenderTextures: []
@@ -23564,7 +23564,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110853102}
-  m_LocalRotation: {x: 0.09853764, y: 0.0000000303109, z: -0.000000504274, w: 0.99513334}
+  m_LocalRotation: {x: 0.09853762, y: 0.000000050127262, z: -0.00000050623623, w: 0.99513334}
   m_LocalPosition: {x: 18.01, y: 101.25, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []

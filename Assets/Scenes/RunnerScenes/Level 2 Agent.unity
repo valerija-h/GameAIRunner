@@ -1428,7 +1428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   broadcastHub:
     broadcastingBrains:
-    - {fileID: 11400000, guid: 5b74a86e516de469491931d01677bc3a, type: 2}
+    - {fileID: 11400000, guid: d1e98d87353c0494e852613f085b6c3b, type: 2}
     m_BrainsToControl:
     - {fileID: 11400000, guid: 932039fa2fdc34784a2c55f4cb31b1ff, type: 2}
   m_TrainingConfiguration:
@@ -4795,6 +4795,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1863294356}
     m_Modifications:
+    - target: {fileID: 2724690102902444261, guid: ed4cf5c34b0d1b44090c2d8b2813cfc0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5160158
+      objectReference: {fileID: 0}
     - target: {fileID: 2724690103047268882, guid: ed4cf5c34b0d1b44090c2d8b2813cfc0,
         type: 3}
       propertyPath: m_Name
@@ -4803,7 +4808,7 @@ PrefabInstance:
     - target: {fileID: 2724690103047268972, guid: ed4cf5c34b0d1b44090c2d8b2813cfc0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.1143566
+      value: 1.0883
       objectReference: {fileID: 0}
     - target: {fileID: 2724690103047268972, guid: ed4cf5c34b0d1b44090c2d8b2813cfc0,
         type: 3}
@@ -4854,6 +4859,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724690103047268972, guid: ed4cf5c34b0d1b44090c2d8b2813cfc0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.6625
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf5c34b0d1b44090c2d8b2813cfc0, type: 3}
@@ -6371,7 +6381,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2067103122
 Transform:
   m_ObjectHideFlags: 0
@@ -6708,7 +6718,7 @@ PrefabInstance:
     - target: {fileID: 5078855490857953616, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5078855490857953616, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}
@@ -6719,7 +6729,7 @@ PrefabInstance:
         type: 3}
       propertyPath: brain
       value: 
-      objectReference: {fileID: 11400000, guid: 5b74a86e516de469491931d01677bc3a,
+      objectReference: {fileID: 11400000, guid: d1e98d87353c0494e852613f085b6c3b,
         type: 2}
     - target: {fileID: 5078855490857953616, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}
@@ -6741,7 +6751,7 @@ PrefabInstance:
         type: 3}
       propertyPath: learningBrain
       value: 
-      objectReference: {fileID: 11400000, guid: 932039fa2fdc34784a2c55f4cb31b1ff,
+      objectReference: {fileID: 11400000, guid: d1e98d87353c0494e852613f085b6c3b,
         type: 2}
     - target: {fileID: 7215837586175050394, guid: 1b197903b114d41929e3723d69516a05,
         type: 3}
